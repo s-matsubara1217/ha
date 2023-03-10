@@ -34,7 +34,7 @@
         border-left: 1px solid #dedede;
         @include mq(sp) {
           flex: auto;
-          min-width: 25%;
+          min-width: 33%;
 
           &:nth-child(5),
           &:nth-child(6),
@@ -89,6 +89,13 @@
           display: block;
           @media screen and (min-width: 1400px) {
             display: none;
+          }
+        }
+
+        &-home {
+          @include mq(sp) {
+            width: 100%;
+            border-bottom: 1px solid #dedede;
           }
         }
       }
