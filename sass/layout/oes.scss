@@ -1,0 +1,245 @@
+@charset "utf-8";
+@use '../foundation/mixins' as *;
+// @include mq(pc)
+// @include mq(tab)
+// @include mq(sp)
+
+/* ============================================
+// 沖縄受験ゼミナール（オー・イー・エス）
+// ==========================================*/
+
+/*--------------------
+	variables
+--------------------*/
+$primary-color: #0255bf;
+$secondary-color: #00a4e8;
+
+/*--------------------
+	ページ内共通
+--------------------*/
+.decoCircle {
+	&-size {
+		&-s {
+
+		}
+	}
+}
+.commonHead01 {
+	.eng {
+
+	}
+	.ja {
+
+	}
+
+	&-color {
+		&-white {
+
+		}
+		&-blue {
+
+		}
+	}
+	&-position {
+		&-center {
+			text-align: center;
+		}
+	}
+}
+
+/*--------------------
+	style
+--------------------*/
+.lower-oes {
+
+	// メインビジュアル
+	.mainVisual {
+		background: radial-gradient(circle, rgba(2,93,203,1) 0%, rgba(2,65,159,1) 60%);
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		&__imgArea {
+			flex: 0 0 47.2%;
+			margin-right: 2.8%;
+			max-width: 692px;
+		}
+		&__img {
+
+		}
+		&__txtArea {
+			flex: 0 0 50%;
+			align-self: center;
+		}
+		&__copy {
+		}
+		&__lead {
+			margin-top: 36px;
+		}
+		&__commonBtn01 {
+			margin-top: 36px;
+		}
+
+	}
+	// イントロ
+	.sec__intro {
+		.intro {
+
+			&__inner {
+
+			}
+
+			&__txtBox {
+				&__txt {
+
+				}
+			}
+			&__body {
+
+			}
+
+			&__txtArea {
+
+			}
+			&__lead {
+
+			}
+			&__desc {
+
+			}
+			&__imgArea {
+
+			}
+			&__imgHolder {
+
+			}
+			&__img {
+
+			}
+
+		}
+	}
+	// 仕事紹介
+	.sec__jobs {
+		.jobs {
+			&__inner {
+
+			}
+			&__head {
+
+			}
+			&__body {
+
+			}
+
+			&__txtArea {
+
+			}
+			&__lead {
+
+			}
+			&__desc {
+
+			}
+			&__listArea {
+
+			}
+			&__cardList {
+				&__item {
+
+				}
+
+				&__jobName {
+
+				}
+				&__img {
+
+				}
+				&__desc {
+
+				}
+			}
+		}
+	}
+	// よくある質問
+	.sec__faq {
+		.faq {
+			&__inner {
+
+			}
+			&__head {
+
+			}
+			&__body {
+
+			}
+		}
+	}
+	// 人事担当者メッセージ
+	.sec__message {
+		.message {
+			&__inner {
+
+			}
+			&__head {
+
+			}
+			&__body {
+
+			}
+
+			&__imgArea {
+
+			}
+			&__img {
+				img {
+					border-radius: 50%;
+				}
+			}
+			&__nameArea {
+
+			}
+			&__status {
+
+			}
+			&__name {
+
+			}
+			&__txtArea {
+
+			}
+			&__desc {
+
+			}
+		}
+	}
+	// リクルート
+	.sec__recruit {
+		.recruit {
+			&__inner {
+
+			}
+			&__lead {
+
+			}
+			&__desc {
+
+			}
+			&__deco {
+				&__circle01 {
+
+				}
+				&__circle02 {
+
+				}
+				&__woman {
+
+				}
+				&__man {
+
+				}
+			}
+		}
+	}
+
+}

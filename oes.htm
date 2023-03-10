@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1024">
+	<script>
+	 	var metalist = document.getElementsByTagName('meta');
+		var ua = navigator.userAgent;
+		for (var i = 0; i < metalist.length; i++) {
+			var name = metalist[i].getAttribute('name');
+			if (name && name.toLowerCase() === 'viewport') {
+				if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+					metalist[i].setAttribute('content', 'width=device-width');
+					break;
+				};
+			}
+		}
+	</script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>浜学園 ブランド紹介サイト</title>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<meta name="robots" content="noindex" />
+	<meta name="robots" content="nofollow" />
+	<meta name="robots" content="noarchive" />
+
+	<!-- SNS -->
+	<meta property="og:title" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="https://job-gear.jp/●/●●/●●●●●●/img/social.png" />
+	<meta property="og:url" content="https://job-gear.jp/●/●●/●●●●●●/" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://job-gear.jp/●/●●/●●●●●●/img/favicon.ico">
+	<link rel="apple-touch-icon" href="https://job-gear.jp/●/●●/●●●●●●/img/apple-touch-icon.png">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<!-- 共通 -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/add.css">
+	<!-- 固有 -->
+	<link rel="stylesheet" href="css/oes.css">
+
+</head>
+
+<body class="lower-oes">
+
+	<!-- ハンバーガーメニュー（共通） -->
+	<div class="hamburger">
+		<div class="hamburger__menu">
+			<div class="hamburger__menu__inner">
+				<div class="commonLogo01 commonLogo01-center hamburger__menu__commonLogo01">
+					<a href="index.htm">
+						<div class="commonLogo01__main">
+							<img src="img/common/logo.png" alt="浜学園" height="48">
+						</div>
+						<div class="commonLogo01__sub">
+							<span class="commonLogo01__sub__eng eng">RECRUIT</span>
+							<span class="commonLogo01__sub__ja">ブランド紹介サイト</span>
+						</div>
+					</a>
+				</div>
+				<div class="hamburger__menu__nav">
+					<ul class="hamburger__menu__nav__list">
+						<li class="hamburger__menu__nav__list__item">
+							<a href="hamakids.htm">はまキッズ</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="hamax.htm">Hamax</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="manabis.htm">マナビス</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="oes.htm">
+								沖縄受験ゼミナール
+								<span class="small">（オー・イー・エス）</span>
+							</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="jfm.htm">JFM</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="others.htm">その他ブランド</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger__menu__close">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<div id="container">
+
+		<!-- ヘッダー（共通） -->
+		<header class="header">
+			<div class="header__inner">
+				<div class="commonLogo01 header__commonLogo01">
+					<a href="index.htm">
+						<div class="commonLogo01__main">
+							<img src="img/common/logo.png" alt="浜学園" height="48">
+						</div>
+						<div class="commonLogo01__sub">
+							<span class="commonLogo01__sub__eng eng">RECRUIT</span>
+							<span class="commonLogo01__sub__ja">ブランド紹介サイト</span>
+						</div>
+					</a>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__nav__list">
+						<li class="header__nav__list__item">
+							<a href="hamakids.htm">はまキッズ</a>
+						</li>
+						<li class="header__nav__list__item">
+							<a href="hamax.htm">Hamax</a>
+						</li>
+						<li class="header__nav__list__item">
+							<a href="manabis.htm">マナビス</a>
+						</li>
+						<!-- [!] header__nav__list__item-active 付与でテキスト・ボーダースタイル追加 -->
+						<li class="header__nav__list__item header__nav__list__item-active">
+							<a href="oes.htm">
+								沖縄受験<br class="oes">ゼミナール
+								<span class="small">（オー・イー・エス）</span>
+							</a>
+						</li>
+						<li class="header__nav__list__item">
+							<a href="jfm.htm">JFM</a>
+						</li>
+						<li class="header__nav__list__item">
+							<a href="others.htm">その他ブランド</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__hamburger -hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+
+		<!-- パンくずリスト（下層共通） -->
+		<div class="breadcrumb">
+			<div class="breadcrumb__inner">
+				<ol class="breadcrumb__list">
+					<li class="breadcrumb__list__item">
+						<a href="index.htm"><span>HOME</span></a>
+					</li>
+					<li class="breadcrumb__list__item">沖縄受験ゼミナール（オー・イー・エス）</li>
+				</ol>
+			</div>
+		</div>
+
+		<!-- ロゴエリア（下層共通） -->
+		<div class="pageLogo">
+			<h1 class="logo">
+				<img src="img/oes/logo.png" alt="沖縄受験ゼミナール">
+			</h1>
+		</div>
+
+		<!-- メインビジュアル -->
+		<!-- <div class="mainVisual">
+			<div class="mainVisual__imgArea">
+				<div class="mainVisual__img">
+					<img src="img/oes/mv_human.png" alt="人物イメージ" class="ofi">
+				</div>
+			</div>
+			<div class="mainVisual__txtArea">
+				<div class="mainVisual__copy">
+					<img src="img/oes/mv_copy.png" alt="沖縄県内で29年連続合格実績No.1">
+				</div>
+				<p class="mainVisual__lead">
+					<img src="img/oes/mv_lead.png" alt="海を越えて活躍する人材を育てる！.1">
+				</p>
+				<div class="mainVisual__commonBtn01 commonBtn01 commonBtn01-size-s commonBtn01-icon-arrowRight commonBtn01-color-lightBlue">
+					<a href="#">
+						<span class="txt">求人情報を見る</span>
+					</a>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- コンテンツ -->
+		<main class="main" id="main">
+
+			<div class="commonBtn01 commonBtn01-size-xl commonBtn01-icon-arrowRight commonBtn01-color-blue">
+				<a href="#">
+					<span class="txt">求人情報を見る</span>
+				</a>
+			</div>
+			<div class="mainVisual__commonBtn01 commonBtn01 commonBtn01-size-s commonBtn01-icon-arrowRight commonBtn01-color-lightBlue">
+				<a href="#">
+					<span class="txt">求人情報を見る</span>
+				</a>
+			</div>
+
+			<!-- イントロ -->
+			<!-- <section class="sec__intro">
+				<div class="intro__inner innerWrap">
+					<div class="intro__txtBox">
+						<p class="intro__txtBox__txt">
+							開校から30年以上の歴史を誇る沖縄受験ゼミナール（オー・イー・エス）が目指すのは、世界で通用する人材の育成です。教材の研究に力を入れ、わかりやすく効果的な授業を日々模索するだけでなく、EQ教育を週1回実施し、非認知能力を伸ばす取り組みも進めています。そして、2020年に浜学園グループの一員に加わったことにより、幼児教育から大学受験まで一貫して学べる県内唯一の学習塾になりました。生徒たちの考える力・伝える力を養い、志望校合格の先にある未来まで育む指導にあなたも携わりませんか。
+						</p>
+					</div>
+					<div class="intro__body">
+						<div class="intro__txtArea">
+							<p class="intro__lead">
+								過ごしやすい環境の中で、<br>
+								実力を磨いていける
+							</p>
+							<p class="intro__desc">
+								地域密着型の学習塾ですが、実は「好きな土地で働きたい」との理由から、Iターンで転職してきた県外出身者も多く在籍しています。日本を代表するリゾート地でもある沖縄は年中気候が良く、スポーツやアウトドアが盛んです。当校でも、趣味仲間が集まり一緒にマラソンやキャンプを楽しんでいます。そうした余暇活動を支えているのは、徹底した残業の抑制と120日間ある年間休日。オン・オフともに充実する環境があり、社内の人間関係も良好です。また、日本各地の難関大学に挑戦する生徒も数多くいるからこそ、県外に生活拠点を置いていた経験は仕事をする上で大きなメリットになります。
+							</p>
+						</div>
+						<div class="intro__imgArea">
+							<div class="intro__imgHolder">
+								<div class="intro__img">
+									<img src="img/oes/intro01.jpg" alt="イメージ" class="ofi" loading="lazy">
+								</div>
+							</div>
+							<div class="intro__imgHolder">
+								<div class="intro__img">
+									<img src="img/oes/intro02.jpg" alt="イメージ" class="ofi" loading="lazy">
+								</div>
+								<div class="intro__img">
+									<img src="img/oes/intro03.jpg" alt="イメージ" class="ofi" loading="lazy">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- 仕事紹介 -->
+			<!-- <section class="sec__jobs">
+				<div class="jobs__inner innerWrap">
+					<div class="jobs__head">
+						<div class="commonHead01 commonHead01-color-white">
+							<span class="eng">Jobs</span>
+							<h2 class="ja">仕事紹介</h2>
+						</div>
+					</div>
+					<div class="jobs__body">
+						<div class="jobs__txtArea">
+							<p class="jobs__lead">
+								さまざまな選択肢の中から<br>
+								自分だけのキャリアを思い描けます。
+							</p>
+							<p class="jobs__desc">
+								講師職・学習アドバイザーのスペシャリストとして、それぞれの道を究められます。たとえば講師職であれば、半期に1度の授業アンケートの結果や担当科目の数を増やすことで昇給可能です。ほかにも、職域を超えて総務や人事、システム管理業務にも携わるといった複合的なキャリアを築くこともでき、業務の幅を広げる分だけ収入アップを目指せます。また、ジェンダー平等の達成のため社内に女性活躍推進委員会を発足し、キャリアアップ研修の実施も始めました。沖縄受験ゼミナール（オー・イー・エス）でどのようなキャリアを思い描くかは、あなた次第です。
+							</p>
+						</div>
+						<div class="jobs__listArea">
+							<ul class="jobs__cardList">
+								<li class="jobs__cardList__item">
+									<p class="jobs__cardList__jobName">講師職</p>
+									<div class="jobs__cardList__img">
+										<img src="img/oes/jobs01.jpg" alt="イメージ" class="ofi" loading="lazy">
+									</div>
+									<p class="jobs__cardList__desc">
+										中学生・高校生・過卒生を対象とする授業（国語・数学・英語・理科・社会）の、いずれか一科目を担当します。当校では分業制を採用しているため、営業活動や事務業務はありません。講師業務に集中できるのが魅力です。また、1日の約半分を教材の研究に充てるのも特長で、効果的な手法をじっくり考えながら日々の授業にのぞめます。
+									</p>
+								</li>
+								<li class="jobs__cardList__item">
+									<p class="jobs__cardList__jobName">学習アドバイザー</p>
+									<div class="jobs__cardList__img">
+										<img src="img/oes/jobs02.jpg" alt="イメージ" class="ofi" loading="lazy">
+									</div>
+									<p class="jobs__cardList__desc">
+										生徒たちの話に耳を傾け、将来のことを一緒に考える仕事です。生徒の悩み相談や進路相談、保護者の方への説明・提案、また生徒募集業務も行います。現在活躍している先輩たちは異業種からの転職組が大半です。別業種で培ってきた視点は、講師たちと一緒に行う特別授業をはじめとしたイベントの企画で大いに役立ちます。
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- よくある質問 -->
+			<section class="sec__faq">
+				<div class="faq__inner innerWrap">
+					<!-- <div class="faq__head">
+						<div class="commonHead01 commonHead01-color-blue commonHead01-position-center">
+							<span class="eng">FAQ</span>
+							<h2 class="ja">よくある質問</h2>
+						</div>
+					</div> -->
+					<div class="faq__body">
+						<div class="faqBox">
+							<ul class="faqList">
+								<li class="faqList__item">
+									<dl class="faqAccordion">
+										<dt class="faqAccordion__head">
+											<p class="faqAccordion__question">教員免許は必要ですか？</p>
+											<div class="i_box">
+												<i class="one_i"></i>
+											</div>
+										</dt>
+										<dd class="faqAccordion__body">
+											<p class="faqAccordion__answer">
+												必要ありません。
+											</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="faqList__item">
+									<dl class="faqAccordion">
+										<dt class="faqAccordion__head">
+											<p class="faqAccordion__question">未経験から応募できますか？</p>
+											<div class="i_box">
+												<i class="one_i"></i>
+											</div>
+										</dt>
+										<dd class="faqAccordion__body">
+											<p class="faqAccordion__answer">
+												可能です。講師職では3割程度の社員が、学習アドバイザーはほぼすべての社員が未経験からスタートしています。
+											</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="faqList__item">
+									<dl class="faqAccordion">
+										<dt class="faqAccordion__head">
+											<p class="faqAccordion__question">入社前に必要な知識の程度を教えてください。</p>
+											<div class="i_box">
+												<i class="one_i"></i>
+											</div>
+										</dt>
+										<dd class="faqAccordion__body">
+											<p class="faqAccordion__answer">
+												講師職の場合は共通テストレベルの筆記テストがあるため、希望科目のみ相応の知識が必要になります。
+											</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="faqList__item">
+									<dl class="faqAccordion">
+										<dt class="faqAccordion__head">
+											<p class="faqAccordion__question">研修について教えてください。</p>
+											<div class="i_box">
+												<i class="one_i"></i>
+											</div>
+										</dt>
+										<dd class="faqAccordion__body">
+											<p class="faqAccordion__answer">
+												入社後は先輩が横についてOJTで指導します。講師職であれば約6ヵ月間を新人教育の期間にしており、マナー研修から板書の練習、板書ノートのつくり方、模擬授業まで多くの研修を通して品質の高い授業を行うスキルを身に付けます。授業を受け持つタイミングは、夏期講習、夏期講習後、冬期講習、4月のいずれかで、その後は標準クラスを担当しながら指導力を磨いていきます。
+											</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 人事担当者メッセージ -->
+			<!-- <section class="sec__message">
+				<div class="message__inner innerWrap">
+					<div class="message__head">
+						<div class="commonHead01 commonHead01-color-white commonHead01-position-center">
+							<span class="eng">MESSAGE</span>
+							<h2 class="ja">人事担当者メッセージ</h2>
+						</div>
+					</div>
+					<div class="message__body">
+						<div class="message__imgArea">
+							<div class="message__img">
+								<img src="img/oes/message01.jpg" alt="イメージ" class="ofi" loading="lazy">
+							</div>
+							<div class="message__nameArea">
+								<p class="message__status">執行役員  人事部兼教務部 部長</p>
+								<p class="message__name">遠山 基樹</p>
+							</div>
+						</div>
+						<div class="message__txtArea">
+							<p class="message__desc">
+								私はもともと北海道で予備校の講師をしており、好きな土地で働きたくて28歳のときに転職したＩターン組です。現在は、講師職と人事業務を兼務しながら、趣味であるトライアスロンやキャンプを楽しんでいます。新人の方に求めるのは、なにより生徒に向ける熱意。そこさえあれば技量はあとからついてきますので、経験の有無を気にする必要はありません。また、当校の授業は個人に任されている部分もあるので、ご自身のカラーを打ち出すことも可能です。私の場合は、授業をあきさせない工夫として、子どものころからの憧れであるパイロットの話題を織り交ぜながら教えているのですが、授業での話がきっかけになって、これまで3名の生徒がパイロットになりました。子どもたちの未来に影響を与えられる仕事に、ぜひチャレンジしてみませんか。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- リクルート -->
+			<!-- <section class="sec__recruit">
+				<div class="recruit__inner innerWrap">
+					<p class="recruit__lead">
+						新たな挑戦を支える<br>
+						仲間を募集しています！
+					</p>
+					<p class="recruit__desc">
+						沖縄受験ゼミナール（オー・イー・エス）では現在、幼児教育から大学受験までシームレスにつながる教育モデルの確立を進めています。県内での前例はないため、すべてが手探りです。しかし、それは大きなやりがいとも言い換えられます。変革期を迎えている時期に入社できるのは、いましかありません。ともに、変わりゆく沖縄受験ゼミナール（オー・イー・エス）を楽しみながら、時代に求められる学習塾をつくりましょう。
+					</p>
+					<div class="commonBtn01 commonBtn01-size-xl commonBtn01-icon-arrowRight commonBtn01-color-blue">
+						<a href="#">
+							<span class="txt">求人情報を見る</span>
+						</a>
+					</div>
+					<div class="recruit__deco">
+						<div class="recruit__deco__circle01">
+							<div class="decoCircle decoCircle-size-s"></div>
+							<div class="decoCircle decoCircle-size-m"></div>
+						</div>
+						<div class="recruit__deco__circle02">
+							<div class="decoCircle decoCircle-size-s"></div>
+							<div class="decoCircle decoCircle-size-m"></div>
+						</div>
+						<div class="recruit__deco__woman">
+							<img src="img/oes/recruit_woman.png" alt="人物イメージ">
+						</div>
+						<div class="recruit__deco__man">
+							<img src="img/oes/recruit_man.png" alt="人物イメージ">
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+
+		</main>
+
+		<!-- フッター（共通） -->
+		<footer class="footer">
+			<nav class="footer__nav">
+				<ul class="footer__nav__list">
+					<li class="footer__nav__list__item">
+						<a href="index.htm">HOME</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="hamakids.htm">はまキッズ</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="hamax.htm">Hamax</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="manabis.htm">マナビス</a>
+					</li>
+					<!-- [!] header__nav__list__item-active 付与でテキスト・ボーダースタイル追加 -->
+					<li class="footer__nav__list__item footer__nav__list__item-active">
+						<a href="oes.htm">
+							沖縄受験<br class="oes">ゼミナール
+							<span class="small">（オー・イー・エス）</span>
+						</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="jfm.htm">JFM</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="others.htm">その他ブランド</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__body">
+				<div class="footer__body__inner innerWrap">
+					<div class="commonLogo01 commonLogo01-center footer__commonLogo01">
+						<a href="index.htm">
+							<div class="commonLogo01__main">
+								<img src="img/common/logo.png" alt="浜学園" height="48">
+							</div>
+							<div class="commonLogo01__sub">
+								<span class="commonLogo01__sub__eng eng">RECRUIT</span>
+								<span class="commonLogo01__sub__ja">ブランド紹介サイト</span>
+							</div>
+						</a>
+					</div>
+					<div class="footer__corporate">
+						<a href="#">
+							<span class="txt">コーポレートサイト</span>
+							<span class="icon">
+								<img src="img/common/ico_external.png" alt="アイコン" height="14">
+							</span>
+						</a>
+					</div>
+					<div class="footer__cr">
+						&copy; HAMAGAKUEN.
+					</div>
+				</div>
+			</div>
+			<div class="footer__ga">
+				<a href="#">Googleアナリティクスの利用について</a>
+			</div>
+		</footer>
+
+		<!-- ページトップ（共通） -->
+		<span class="pagetop">
+			<a href="#container">
+				<img src="img/common/pagetop.png" height="96" alt="PAGETOP">
+			</a>
+		</span>
+
+	</div>
+
+	<!-- JavaScript -->
+	<!-- 共通スクリプト -->
+	<script src="js/vendor/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

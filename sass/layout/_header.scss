@@ -1,0 +1,148 @@
+@charset "utf-8";
+@use '../foundation/mixins' as *;
+// @include mq(sp)
+// @include mq(tab)
+
+/* ============================================
+// HEADER
+// ==========================================*/
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: #fff;
+  // box-shadow: 0px 8px 24px -28px #777777;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  &__logoTxt {
+    padding: 0 40px;
+    padding-top: 6px;
+    @include mq(sp) {
+      padding: 0 20px;
+    }
+
+    a {
+      @media screen and (max-width: 1432px) {
+        display: block;
+      }
+    }
+    &__main {
+      display: flex;
+
+      @include mq(sp) {
+        margin-top: 5px;
+      }
+      img {
+        @include mq(sp) {
+          height: 14px;
+        }
+      }
+    }
+    &__sub {
+      color: #555555;
+      @include mq(sp) {
+        font-size: 1rem;
+        display: block;
+        margin-top: 0;
+      }
+    }
+  }
+  &__nav {
+    flex: auto;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+      &__item {
+        flex: 1;
+        position: relative;
+        height: 100%;
+        border-left: 1px solid #dedede;
+
+        &-active {
+          a {
+            color: #004391;
+          }
+          border-bottom: 2px solid #004391;
+        }
+
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          padding: 0 10px;
+          line-height: 1.3;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        .small {
+          display: block;
+          font-size: 1.3rem;
+          line-height: 1.3;
+          margin-top: 4px;
+          @media screen and (max-width: 1400px) {
+            font-size: 1rem;
+          }
+        }
+        br.oes {
+          display: block;
+          @media screen and (min-width: 1400px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__commonLogo01 {
+    a {
+  		padding: 32px 40px;
+      @include mq(sp) {
+        padding: 14px 20px;
+      }
+    }
+  }
+  &__hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 112px;
+    background-color: #fff;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: color 0.4s, background 0.3s;
+    @media screen and (min-width: 1201px) {
+      display: none;
+    }
+    @include mq(sp) {
+      width: 60px;
+      height: 60px;
+    }
+    span{
+      width: 28px;
+      height: 2px;
+      margin: 3px 0;
+      background: $txt-color;
+      transition: background 0.4s;
+      @include mq(sp) {
+        width: 24px;
+        margin: 2px 0;
+      }
+    }
+  }
+}

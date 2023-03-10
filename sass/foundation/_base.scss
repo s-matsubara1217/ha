@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+@use '../foundation/mixins' as *;
+
+/* ============================================
+// RESET
+// ==========================================*/
+*{-webkit-box-sizing: border-box;box-sizing: border-box;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
+a{outline: none;text-decoration: none;}
+li{list-style: none;}
+img{vertical-align: bottom;-webkit-backface-visibility: hidden;backface-visibility: hidden;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+
+
+/* ============================================
+// BASE
+// ==========================================*/
+
+/*--------------------
+	html,body
+--------------------*/
+html,
+body{
+	height: 100%;
+	min-width: 1024px;
+	@include mq(sp) {
+		min-width: inherit;
+	}
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	position: relative;
+	font-family: $default-family;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: $txt-color;
+	line-height: 2;
+	letter-spacing: 0.05em;
+	-webkit-text-size-adjust: none;
+	-webkit-overflow-scrolling: touch;
+	@include mq(sp) {
+		font-size: 1.4rem;
+		background-size: auto;
+	}
+}
+
+/*--------------------
+	#container
+--------------------*/
+#container{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 112px;
+	@include mq(sp) {
+		padding-top: 60px;
+	}
+}
+
+/*--------------------
+	innerWrap
+--------------------*/
+.innerWrap{
+	max-width: 1280px;
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	padding: 0 40px;
+	@include mq(sp) {
+		max-width: 640px;
+		padding: 0 20px;
+	}
+}
+
+/*--------------------
+	a
+--------------------*/
+a {
+	color: $txt-color;
+	transition: opacity 0.24s,color 0.24s;
+}
+
+/*--------------------
+	TEL
+--------------------*/
+@media (min-device-width: 769px){
+	a[href^="tel:"] {
+		cursor: default;
+		pointer-events: none;
+	}
+}
+
+/*--------------------
+	ofi
+--------------------*/
+.ofi {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/*--------------------
+	fonts
+--------------------*/
+.eng{font-family: $eng;}
+.mincho{font-family: $mincho;}
+
+/*--------------------
+	cookie banner
+--------------------*/
+#ot-sdk-btn-floating.ot-floating-button{
+	.ot-floating-button__front button{
+		outline: none !important;
+	}
+}
+
+/*--------------------
+	hamburger
+--------------------*/
+.hamburger{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999999999;
+	backdrop-filter: blur(48px);
+	background-color: rgba(#fff,0.8);
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0,0);
+
+	.js-loaded &{
+		transition: opacity 0.5s ease,visibility 0.5s ease;
+	}
+	&.js-open{
+		opacity: 1;
+		visibility: visible;
+	}
+	&__menu{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: 72px;
+		overflow-y: auto;
+		position: relative;
+		max-width: 1000px;
+		margin: auto;
+		@include mq(sp) {
+			padding: 60px 10% 60px;
+		}
+
+		&__inner{
+			width: 100%;
+			margin: auto;
+		}
+		&__commonLogo01 {
+			margin-bottom: 28px;
+			a {
+				justify-content: center;
+			}
+		}
+		&__nav{
+			&__list{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				@include mq(sp) {
+					display: block;
+					border-top: 1px solid rgba($txt-color,0.2);
+				}
+				&__item{
+					flex: 0 0 48%;
+					font-weight: bold;
+					border-bottom: 1px solid rgba($txt-color,0.2);
+					line-height: 1.6;
+					@include mq(pc) {
+						&:nth-child(-n+2){
+							border-top: 1px solid rgba($txt-color,0.2);
+						}
+					}
+					a {
+						position: relative;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: flex-start;
+						padding: 20px 16px;
+						color: $txt-color;
+						transition: opacity 0.3s;
+						height: 100%;
+						@include mq(pc) {
+							&:hover {
+								opacity: 0.7;
+							}
+						}
+						@include mq(sp) {
+							padding: 18px 16px;
+							background-position: right 10px center;
+							background-size: auto 12px;
+						}
+						&:after{
+							content: '';
+							position: absolute;
+							right: 20px;
+							top: 50%;
+							width: 10px;
+							height: 10px;
+							margin-top: -5px;
+							border: 2px solid $txt-color;
+							box-sizing: border-box;
+							border-color: $txt-color $txt-color transparent transparent;
+							transform: rotate(45deg);
+						}
+					}
+					.small {
+						display: block;
+						line-height: 1.6;
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+		&__share{
+			margin-top: 50px;
+			@include mq(sp) {
+				margin-top: 20px;
+			}
+			.hd{
+				text-align: center;
+				font-size: 1.4rem;
+				font-family: $eng;
+				font-weight: 600;
+				margin-right: 8px;
+				@include mq(sp) {
+					margin-right: 0;
+					font-size: 1.3rem;
+				}
+			}
+			.list{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&__item{
+					margin: 0 4px;
+
+					img {
+						@include mq(sp) {
+							height: 28px;
+						}
+					}
+				}
+			}
+		}
+		&__close{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 84px;
+			height: 112px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			cursor: pointer;
+			transition: background 0.3s;
+			@include mq(sp) {
+				width: 60px;
+				height: 60px;
+				background: transparent;
+			}
+			& > span{
+				display: block;
+				width: 28px;
+				height: 2px;
+				background: $txt-color;
+				transition: background 0.4s;
+				@include mq(sp) {
+					width: 24px;
+				}
+				&:nth-child(1){
+					transform: rotate(45deg) translate(0,1px);
+				}
+				&:nth-child(2){
+					transform: rotate(-45deg) translate(0,-1px);
+				}
+			}
+		}
+	}
+}
+
+/*--------------------
+	PC SPのみ
+--------------------*/
+.u-pcOnly {
+	@include mq(sp) {
+		display: none !important;
+	}
+}
+.u-pcUpOnly {
+	@include mq(tab) {
+		display: none !important;
+	}
+}
+.u-spOnly {
+	@include mq(pc) {
+		display: none !important;
+	}
+}
