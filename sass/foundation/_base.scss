@@ -55,6 +55,7 @@ body{
 	width: 100%;
 	overflow: hidden;
 	padding-top: 112px;
+	position: relative;
 	@include mq(sp) {
 		padding-top: 60px;
 	}
@@ -92,6 +93,11 @@ a {
 		pointer-events: none;
 	}
 }
+
+/*--------------------
+	hover
+--------------------*/
+.ro:hover{@include mq(pc) {opacity: 0.7;transition: all 0.24s;}}
 
 /*--------------------
 	ofi
@@ -221,6 +227,9 @@ a {
 						display: block;
 						line-height: 1.6;
 						font-size: 1.4rem;
+						@include mq(sp) {
+							font-size: 1.2rem;
+						}
 					}
 				}
 			}

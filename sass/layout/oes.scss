@@ -52,35 +52,36 @@ $secondary-color: #00a4e8;
 --------------------*/
 .lower-oes {
 
+
 	// メインビジュアル
-	.mainVisual {
-		background: radial-gradient(circle, rgba(2,93,203,1) 0%, rgba(2,65,159,1) 60%);
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
+	// .mainVisual {
+	// 	background: radial-gradient(circle, rgba(2,93,203,1) 0%, rgba(2,65,159,1) 60%);
+	// 	display: flex;
+	// 	justify-content: flex-start;
+	// 	align-items: flex-start;
 
-		&__imgArea {
-			flex: 0 0 47.2%;
-			margin-right: 2.8%;
-			max-width: 692px;
-		}
-		&__img {
+	// 	&__imgArea {
+	// 		flex: 0 0 47.2%;
+	// 		margin-right: 2.8%;
+	// 		max-width: 692px;
+	// 	}
+	// 	&__img {
 
-		}
-		&__txtArea {
-			flex: 0 0 50%;
-			align-self: center;
-		}
-		&__copy {
-		}
-		&__lead {
-			margin-top: 36px;
-		}
-		&__commonBtn01 {
-			margin-top: 36px;
-		}
+	// 	}
+	// 	&__txtArea {
+	// 		flex: 0 0 50%;
+	// 		align-self: center;
+	// 	}
+	// 	&__copy {
+	// 	}
+	// 	&__lead {
+	// 		margin-top: 36px;
+	// 	}
+	// 	&__commonBtn01 {
+	// 		margin-top: 36px;
+	// 	}
 
-	}
+	// }
 	// イントロ
 	.sec__intro {
 		.intro {

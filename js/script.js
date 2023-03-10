@@ -203,4 +203,46 @@
 	});
 
 
+	/*----------------------------------------------------
+		ページトップ フッター上で止める
+	-----------------------------------------------------*/
+	function pagetopStop() {
+		var documentHeight = $(document).height();
+		var scrollPosition = $(this).height() + $(this).scrollTop();
+		var footerGaHeight = $(".footer__ga").innerHeight();
+
+		// 通常ページ
+		if (window.matchMedia('(min-width: 768px)').matches) {
+			// PC表示の時の処理
+			if (documentHeight - scrollPosition <= footerGaHeight) {
+				$(".pagetop").css({
+					position: "absolute",
+					bottom: footerGaHeight + 16
+				});
+			} else {
+				$(".pagetop").css({
+					position: "fixed",
+					bottom: 16
+				})
+			}
+		} else {
+			// スマホ表示の時の処理
+			if (documentHeight - scrollPosition <= footerGaHeight) {
+				$(".pagetop").css({
+					position: "absolute",
+					bottom: footerGaHeight + 4
+				});
+			} else {
+				$(".pagetop").css({
+					position: "fixed",
+					bottom: 4
+				})
+			}
+		}
+	}
+	$(window).scroll(function () {
+		pagetopStop();
+	})
+
+
 })(jQuery);

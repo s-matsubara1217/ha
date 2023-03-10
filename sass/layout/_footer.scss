@@ -8,15 +8,15 @@
 // ==========================================*/
 .footer{
   position: relative;
-  @include mq(sp) {
-    padding: 56px 0 96px;
-  }
 
   &__inner {
   }
   &__body {
     padding: 60px 0;
     text-align: center;
+    @include mq(sp) {
+      padding: 48px 0;
+    }
   }
 
   &__nav {
@@ -25,17 +25,33 @@
       justify-content: flex-start;
       align-items: stretch;
       height: 100%;
-      // flex-wrap: wrap;
+      flex-wrap: wrap;
       border-top: 1px solid #dedede;
       border-bottom: 1px solid #dedede;
 
       &__item {
         flex: 1;
         border-left: 1px solid #dedede;
+        @include mq(sp) {
+          flex: auto;
+          min-width: 25%;
+
+          &:nth-child(5),
+          &:nth-child(6),
+          &:nth-child(7) {
+            border-top: 1px solid #dedede;
+          }
+        }
 
         &-active {
           a {
             color: #004391;
+            @include mq(pc) {
+              &:hover {
+                opacity: 1;
+                cursor: auto;
+              }
+            }
           }
           border-bottom: 2px solid #004391;
         }
@@ -52,7 +68,12 @@
           font-size: 1.5rem;
           font-weight: bold;
           @include mq(sp) {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
+            padding: 16px 8px;
+          }
+          @media only screen and (max-width: 345px) {
+            font-size: 1.2rem;
+            padding: 16px 4px;
           }
         }
         .small {
@@ -93,7 +114,7 @@
         }
       }
       @include mq(sp) {
-        padding: 10px 16px;
+        padding: 8px 20px;
       }
 
       .txt {
@@ -112,17 +133,26 @@
   &__cr {
     margin-top: 36px;
     font-size: 1.2rem;
+    @include mq(sp) {
+      margin-top: 28px;
+    }
   }
   &__ga {
     background-color: #f2f2f2;
     text-align: center;
     padding: 12px 0 14px;
+    @include mq(sp) {
+      padding: 8px 0 14px;
+    }
 
     a {
       color: rgba($txt-color,0.6);
       font-size: 1.2rem;
       border-bottom: 1px solid;
       padding-bottom: 2px;
+      @include mq(sp) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -162,7 +192,7 @@
 
     img {
       @include mq(sp){
-        height: 72px;
+        height: 64px;
         width: auto;
       }
     }
