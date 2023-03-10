@@ -132,9 +132,8 @@ a {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 9999999999;
-	backdrop-filter: blur(48px);
-	background-color: rgba(#fff,0.8);
+	z-index: 99999999999;
+	background-color: #fff;
 	opacity: 0;
 	visibility: hidden;
 	transform: translate(0,0);
