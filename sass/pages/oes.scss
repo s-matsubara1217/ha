@@ -52,47 +52,86 @@ $secondary-color: #00a4e8;
 --------------------*/
 .lower-oes {
 
-
 	// メインビジュアル
-	// .mainVisual {
-	// 	background: radial-gradient(circle, rgba(2,93,203,1) 0%, rgba(2,65,159,1) 60%);
-	// 	display: flex;
-	// 	justify-content: flex-start;
-	// 	align-items: flex-start;
+	.mainVisual {
+		background: radial-gradient(circle, rgba(2,93,203,1) 0%, rgba(2,65,159,1) 60%);
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: 560px;
+		@include mq(tab) {
+			height: 496px - 16px;
+		}
 
-	// 	&__imgArea {
-	// 		flex: 0 0 47.2%;
-	// 		margin-right: 2.8%;
-	// 		max-width: 692px;
-	// 	}
-	// 	&__img {
+		&__imgArea {
+			flex: 0 0 47.2%;
+			margin-right: 2.8%;
+		}
+		&__img {
+			margin-top: -28px;
+			@include mq(tab) {
+				margin-top: -16px;
+			}
 
-	// 	}
-	// 	&__txtArea {
-	// 		flex: 0 0 50%;
-	// 		align-self: center;
-	// 	}
-	// 	&__copy {
-	// 	}
-	// 	&__lead {
-	// 		margin-top: 36px;
-	// 	}
-	// 	&__commonBtn01 {
-	// 		margin-top: 36px;
-	// 	}
+			img {
+				@include mq(tab) {
+					height: 496px;
+				}
+			}
+		}
+		&__txtArea {
+			flex: 0 0 50%;
+			align-self: center;
+			margin-top: -40px;
+		}
+		&__copy {
+			img {
+				@include mq(tab) {
+					transform: scale(0.8);
+					transform-origin: left;
+				}
+			}
+		}
+		&__lead {
+			margin-top: 36px;
+			@include mq(tab) {
+				margin-top: 16px;
+			}
 
-	// }
+			img {
+				@include mq(tab) {
+					transform: scale(0.8);
+					transform-origin: left;
+				}
+			}
+		}
+		&__commonBtn01 {
+			margin-top: 36px;
+			@include mq(tab) {
+				margin-top: 24px;
+			}
+		}
+
+	}
 	// イントロ
 	.sec__intro {
 		.intro {
 
 			&__inner {
-
+				max-width: 1180px;
 			}
 
 			&__txtBox {
-				&__txt {
+				max-width: 960px;
+				margin: 0 auto;
+				margin-top: -40px;
+				background-color: #fff;
+				border: 3px solid $primary-color;
+				border-radius: 16px;
+				padding: 48px 7.2%;
 
+				&__txt {
+					color: $primary-color;
 				}
 			}
 			&__body {
