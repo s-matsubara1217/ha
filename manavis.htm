@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1024">
+	<script>
+	 	var metalist = document.getElementsByTagName('meta');
+		var ua = navigator.userAgent;
+		for (var i = 0; i < metalist.length; i++) {
+			var name = metalist[i].getAttribute('name');
+			if (name && name.toLowerCase() === 'viewport') {
+				if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+					metalist[i].setAttribute('content', 'width=device-width');
+					break;
+				};
+			}
+		}
+	</script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>浜学園 ブランド紹介サイト</title>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<meta name="robots" content="noindex" />
+	<meta name="robots" content="nofollow" />
+	<meta name="robots" content="noarchive" />
+
+	<!-- SNS -->
+	<meta property="og:title" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="https://job-gear.jp/●/●●/●●●●●●/img/social.png" />
+	<meta property="og:url" content="https://job-gear.jp/●/●●/●●●●●●/" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://job-gear.jp/●/●●/●●●●●●/img/favicon.ico">
+	<link rel="apple-touch-icon" href="https://job-gear.jp/●/●●/●●●●●●/img/apple-touch-icon.png">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<!-- 共通 -->
+	<link rel="stylesheet" href="css/common.css">
+	<!-- [!] 固有 -->
+	<link rel="stylesheet" href="css/manavis.css">
+	<!-- 共通 -->
+	<link rel="stylesheet" href="css/add.css">
+</head>
+
+<body class="lower-manavis">
+
+	<!-- ハンバーガーメニュー（共通） -->
+	<div class="hamburger">
+		<div class="hamburger__menu">
+			<div class="hamburger__menu__inner">
+				<div class="commonLogo01 commonLogo01-center hamburger__menu__commonLogo01">
+					<a href="index.htm" class="ro">
+						<div class="commonLogo01__main">
+							<img src="img/common/logo.png" alt="浜学園" height="48">
+						</div>
+						<div class="commonLogo01__sub">
+							<span class="commonLogo01__sub__eng eng">RECRUIT</span>
+							<span class="commonLogo01__sub__ja">ブランド紹介サイト</span>
+						</div>
+					</a>
+				</div>
+				<div class="hamburger__menu__nav">
+					<ul class="hamburger__menu__nav__list">
+						<li class="hamburger__menu__nav__list__item">
+							<a href="hamakids.htm" class="ro">はまキッズ</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="hamax.htm" class="ro">Hamax</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="manavis.htm" class="ro">マナビス</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="oes.htm" class="ro">
+								沖縄受験ゼミナール
+								<span class="small">（オー・イー・エス）</span>
+							</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="jfm.htm" class="ro">JFM</a>
+						</li>
+						<li class="hamburger__menu__nav__list__item">
+							<a href="others.htm" class="ro">その他ブランド</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger__menu__close">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<div id="container">
+
+		<!-- ヘッダー（共通） -->
+		<header class="header">
+			<div class="header__inner">
+				<div class="commonLogo01 header__commonLogo01">
+					<a href="index.htm" class="ro">
+						<div class="commonLogo01__main">
+							<img src="img/common/logo.png" alt="浜学園" height="48">
+						</div>
+						<div class="commonLogo01__sub">
+							<span class="commonLogo01__sub__eng eng">RECRUIT</span>
+							<span class="commonLogo01__sub__ja">ブランド紹介サイト</span>
+						</div>
+					</a>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__nav__list">
+						<li class="header__nav__list__item">
+							<a href="hamakids.htm" class="ro">はまキッズ</a>
+						</li>
+						<li class="header__nav__list__item">
+							<a href="hamax.htm" class="ro">Hamax</a>
+						</li>
+						<li class="header__nav__list__item">
+							<a href="manavis.htm" class="ro">マナビス</a>
+						</li>
+						<!-- [!] header__nav__list__item-active 付与でテキスト・ボーダースタイル追加 -->
+						<li class="header__nav__list__item header__nav__list__item-active">
+							<a href="oes.htm" class="ro">
+								沖縄受験<br class="oes">ゼミナール
+								<span class="small">（オー・イー・エス）</span>
+							</a>
+						</li>
+						<li class="header__nav__list__item">
+							<a href="jfm.htm" class="ro">JFM</a>
+						</li>
+						<li class="header__nav__list__item">
+							<a href="others.htm" class="ro">その他ブランド</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__hamburger -hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+
+		<!-- パンくずリスト（下層共通） -->
+		<div class="breadcrumb">
+			<div class="breadcrumb__inner">
+				<ol class="breadcrumb__list">
+					<li class="breadcrumb__list__item">
+						<a href="index.htm"><span>HOME</span></a>
+					</li>
+					<li class="breadcrumb__list__item">マナビス</li>
+				</ol>
+			</div>
+		</div>
+
+		<!-- ロゴエリア（下層共通） -->
+		<div class="pageLogo">
+			<h1 class="logo">
+				<img src="img/manavis/logo.png" alt="自ら学ぶ力で、大学現役合格を。河合塾マナビス">
+			</h1>
+		</div>
+
+		<!-- メインビジュアル -->
+		<div class="mainVisual">
+			<div class="mainVisual__border">
+				<div class="mainVisual__border__item mainVisual__border__item-01"></div>
+				<div class="mainVisual__border__item mainVisual__border__item-02"></div>
+				<div class="mainVisual__border__item mainVisual__border__item-03"></div>
+				<div class="mainVisual__border__item mainVisual__border__item-04"></div>
+				<div class="mainVisual__border__item mainVisual__border__item-05"></div>
+			</div>
+			<div class="mainVisual__wrap">
+				<div class="mainVisual__inner innerWrap">
+					<div class="mainVisual__txtArea">
+						<div class="mainVisual__copy">
+							<img src="img/manavis/mv_copy.png" alt="生徒を合格へナビゲート 校舎を未来へアップデート" class="ofi">
+						</div>
+						<p class="mainVisual__desc">
+							「実績ある河合塾がプロデュースしたテキストと映像授業」と「経験豊富なアドバイザーによる人的かつ個別的サポート」。映像授業塾と個別指導塾の良さを兼ね備えるのが河合塾マナビスです。学力の上がる、一つ上の大学に現役合格できる塾としてのブランド力のさらなる向上を目指して、新しい仲間を求めます。
+						</p>
+					</div>
+					<div class="mainVisual__imgArea">
+						<img src="img/manavis/mv_human.png" alt="人物イメージ" class="ofi">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- コンテンツ -->
+		<main class="main" id="main">
+
+			<!-- 募集職種 -->
+			<section class="sec__jobs">
+				<div class="jobs">
+					<div class="jobs__inner innerWrap">
+						<div class="jobs__head">
+							<div class="commonHead01 commonHead01-position-center">
+								<span class="commonHead01__eng">JOBS</span>
+								<h2 class="commonHead01__ja">募集職種</h2>
+							</div>
+						</div>
+						<div class="jobs__body">
+							<div class="jobs__jobsName">学習アドバイザー</div>
+							<div class="jobs__txtArea">
+								<p class="jobs__lead">教えない。でも導く。</p>
+								<p class="jobs__desc">
+									校舎運営スタッフとして合格実績、生徒数等において地域NO1の大学受験塾を目指す河合塾マナビス校舎の運営をお任せします。生徒募集、生徒面談指導、三者面談、受験出願指導、校舎の経営管理と業務は多岐にわたりますが、学習指導の必要はありません。できなかったことができるなど生徒の成長が感じられる喜び、定期テストや模擬テストの成績が上がった喜び、志望校に合格したときの喜び、そして、「ありがとう」と感謝される喜び…。たくさんの喜びと出会える、やりがいあふれる仕事です。
+								</p>
+							</div>
+							<div class="jobs__imgArea">
+								<div class="jobs__img">
+									<img src="img/manavis/jobs_img.jpg" alt="イメージ" class="ofi" loading="lazy">
+								</div>
+								<div class="jobs__illust">
+									<img src="img/manavis/jobs_illust.png" alt="イラストイメージ" height="169">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- キャリアプラン -->
+			<section class="sec__career">
+				<div class="career">
+					<div class="career__inner innerWrap">
+						<div class="career__head">
+							<div class="commonHead01 commonHead01-position-center">
+								<span class="commonHead01__eng">CAREER</span>
+								<h2 class="commonHead01__ja">キャリアプラン</h2>
+							</div>
+						</div>
+						<div class="career__body">
+							<p class="career__lead">
+								学習アドバイザーからスタートして校舎長のサポートをしながら経験を積んでいきます。その後、能力や適性、希望に応じて校舎長、ブロック長へのキャリアアップも可能です。
+							</p>
+							<ul class="careerList">
+								<li class="careerList__item">
+									<div class="careerList__head">
+										<div class="careerList__numHolder">
+											<span class="careerList__num eng">01</span>
+											<span class="careerList__eng eng">CAREER</span>
+										</div>
+										<h3 class="careerList__jobName">学習アドバイザー</h3>
+									</div>
+									<div class="careerList__body">
+										<p class="careerList__term">生徒を志望校合格へ導く</p>
+										<p class="careerList__desc">
+											映像授業の活用法や学習計画のアドバイスを通して「成績向上」と「志望大学現役合格」を目指します。志望校選定から、短期・長期目標の設定、スケジュール管理まで、生徒一人ひとりが自立して成長できるように導いていく存在です。
+										</p>
+									</div>
+
+								</li>
+								<li class="careerList__item">
+									<div class="careerList__head">
+										<div class="careerList__numHolder">
+											<span class="careerList__num eng">02</span>
+											<span class="careerList__eng eng">CAREER</span>
+										</div>
+										<h3 class="careerList__jobName">校舎長</h3>
+									</div>
+									<div class="careerList__body">
+										<p class="careerList__term">経営者のように校舎を運営</p>
+										<p class="careerList__desc">
+											校舎運営責任者として校舎全体のマネジメントを行います。人材育成、プレゼンテーションスキル、管理会計、校舎を広報するためのマーケティングスキルなど、さまざまなビジネススキルが求められるため、経営者を疑似体験できます。
+										</p>
+									</div>
+								</li>
+								<li class="careerList__item">
+									<div class="careerList__head">
+										<div class="careerList__numHolder">
+											<span class="careerList__num eng">03</span>
+											<span class="careerList__eng eng">CAREER</span>
+										</div>
+										<h3 class="careerList__jobName">ブロック長</h3>
+									</div>
+									<div class="careerList__body">
+										<p class="careerList__term">エリア戦略立案・人材育成</p>
+										<p class="careerList__desc">
+											複数校舎がまとまったブロックのマネージャーです。スタッフ研修の企画、エリア戦略の立案、広報施策の実行など携わる業務は多岐にわたります。中でも現役の校舎長の育成と、次世代の校舎長の育成こそブロック長の最も重要な役割です。
+										</p>
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- セパレートイメージ -->
+			<div class="separateImg">
+				<img src="img/manavis/separate_img.jpg" alt="イメージ" class="ofi" loading="lazy">
+			</div>
+			<!-- ポイント -->
+			<section class="sec__point">
+				<div class="point">
+					<div class="point__inner innerWrap">
+						<div class="point__head">
+							<div class="commonHead01 commonHead01-position-center">
+								<span class="commonHead01__eng">POINT</span>
+								<h2 class="commonHead01__ja">ポイント</h2>
+							</div>
+						</div>
+						<div class="point__body">
+							<ul class="pointCircleList">
+								<li class="pointCircleList__item">
+									<span class="pointCircleList__pointTag pointTag eng">POINT01</span>
+									<p class="pointCircleList__txt">
+										朝ゆっくりの<br>
+										14時始業
+									</p>
+								</li>
+								<li class="pointCircleList__item">
+									<span class="pointCircleList__pointTag pointTag eng">POINT02</span>
+									<p class="pointCircleList__txt">
+										残業ほぼ無縁<br>
+										平日休み
+									</p>
+								</li>
+								<li class="pointCircleList__item">
+									<span class="pointCircleList__pointTag pointTag eng">POINT03</span>
+									<p class="pointCircleList__txt">
+										仕事ぶりを<br>
+										しっかり評価
+									</p>
+								</li>
+							</ul>
+							<ul class="pointList">
+								<li class="pointList__item">
+									<div class="pointList__txtArea">
+										<span class="pointList__pointTag pointTag eng">POINT01</span>
+										<p class="pointList__lead">朝ゆっくりの14時始業</p>
+										<p class="pointList__desc">
+											朝はちょっぴり苦手…そんな人でも安心の14時始業です！通勤ラッシュを避けられるので、職場に着いたら疲弊していた、なんてことからは卒業できます。
+										</p>
+									</div>
+									<div class="pointList__illustArea">
+										<div class="pointList__illust">
+											<img src="img/manavis/point_illust01.png" alt="イラストイメージ" height="183">
+										</div>
+									</div>
+								</li>
+								<li class="pointList__item">
+									<div class="pointList__txtArea">
+										<span class="pointList__pointTag pointTag eng">POINT02</span>
+										<p class="pointList__lead">残業ほぼ無縁＆平日休み</p>
+										<p class="pointList__desc">
+											映像授業の河合塾マナビスは、平均的な月間の残業時間は１０時間前後です。平日休みなので、わざわざ有給休暇を消化して役所や銀行へ行く必要もなくなります。
+										</p>
+									</div>
+									<div class="pointList__illustArea">
+										<div class="pointList__illust">
+											<img src="img/manavis/point_illust02.png" alt="イラストイメージ" height="195">
+										</div>
+									</div>
+								</li>
+								<li class="pointList__item">
+									<div class="pointList__txtArea">
+										<span class="pointList__pointTag pointTag eng">POINT03</span>
+										<p class="pointList__lead">仕事ぶりをしっかり評価</p>
+										<p class="pointList__desc">
+											校舎業績に基づく「業績評価」と、求められる行動への実践度を評価する「行動評価」、社員が成長を実感できる「目標達成度評価」という評価制度をご用意。
+										</p>
+									</div>
+									<div class="pointList__illustArea">
+										<div class="pointList__illust">
+											<img src="img/manavis/point_illust03.png" alt="イラストイメージ" height="193">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- よくある質問 -->
+			<section class="sec__faq">
+				<div class="faq">
+					<div class="faq__inner innerWrap">
+						<div class="faq__head">
+							<div class="commonHead01 commonHead01-position-center">
+								<span class="commonHead01__eng">FAQ</span>
+								<h2 class="commonHead01__ja">よくある質問</h2>
+							</div>
+						</div>
+						<div class="faq__body">
+							<div class="faqBox">
+								<ul class="faqList">
+									<li class="faqList__item">
+										<dl class="faqAccordion">
+											<dt class="faqAccordion__head">
+												<span class="faqAccordion__initial">Q</span>
+												<p class="faqAccordion__question">どのような仕事ですか？</p>
+												<span class="toggle_trigger">
+													<span class="toggle_trigger_txt_ico"></span>
+													<span class="toggle_trigger_txt_ico"></span>
+												</span>
+											</dt>
+											<dd class="faqAccordion__body">
+												<p class="faqAccordion__answer">
+													合格のための学習プランの提案や大学受験指導・進路相談を主に行ないます。
+												</p>
+											</dd>
+										</dl>
+									</li>
+									<li class="faqList__item">
+										<dl class="faqAccordion">
+											<dt class="faqAccordion__head">
+												<span class="faqAccordion__initial">Q</span>
+												<p class="faqAccordion__question">どれくらいの学力が必要ですか？</p>
+												<span class="toggle_trigger">
+													<span class="toggle_trigger_txt_ico"></span>
+													<span class="toggle_trigger_txt_ico"></span>
+												</span>
+											</dt>
+											<dd class="faqAccordion__body">
+												<p class="faqAccordion__answer">
+													重要なのは学力ではなく、コミュニケーション能力や目標達成意欲です。入社の際に、学力試験は実施していません。教科指導は、現役大学生・大学院生のアルバイトであるアシスタント・アドバイザーが主に行います。
+												</p>
+											</dd>
+										</dl>
+									</li>
+									<li class="faqList__item">
+										<dl class="faqAccordion">
+											<dt class="faqAccordion__head">
+												<span class="faqAccordion__initial">Q</span>
+												<p class="faqAccordion__question">どのような人材を求めていますか？</p>
+												<span class="toggle_trigger">
+													<span class="toggle_trigger_txt_ico"></span>
+													<span class="toggle_trigger_txt_ico"></span>
+												</span>
+											</dt>
+											<dd class="faqAccordion__body">
+												<p class="faqAccordion__answer">
+													教育に対しての情熱やコミュニケーション力があり、営業や学習塾業界などの経験をお持ちの方は歓迎します。ご自身の大学受験や通塾経験も活かしていただけます。充実した研修がありますので、未経験の方も安心してご応募ください。
+												</p>
+											</dd>
+										</dl>
+									</li>
+									<li class="faqList__item">
+										<dl class="faqAccordion">
+											<dt class="faqAccordion__head">
+												<span class="faqAccordion__initial">Q</span>
+												<p class="faqAccordion__question">休日はどれくらいありますか？</p>
+												<span class="toggle_trigger">
+													<span class="toggle_trigger_txt_ico"></span>
+													<span class="toggle_trigger_txt_ico"></span>
+												</span>
+											</dt>
+											<dd class="faqAccordion__body">
+												<p class="faqAccordion__answer">
+													週休２日を基本とし、各月に指定された休日日数を基準に１ヵ月ごとのシフト制を採用しています。
+												</p>
+											</dd>
+										</dl>
+									</li>
+									<li class="faqList__item">
+										<dl class="faqAccordion">
+											<dt class="faqAccordion__head">
+												<span class="faqAccordion__initial">Q</span>
+												<p class="faqAccordion__question">研修について教えてください。</p>
+												<span class="toggle_trigger">
+													<span class="toggle_trigger_txt_ico"></span>
+													<span class="toggle_trigger_txt_ico"></span>
+												</span>
+											</dt>
+											<dd class="faqAccordion__body">
+												<p class="faqAccordion__answer">
+													入社後からビジネスマナー＆スキル研修をはじめ、実務を通した現場研修、さらにはリーダー育成、マネジメント研修まで、幅広く豊富な研修制度を用意しています。
+												</p>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- メッセージ -->
+			<section class="sec__message">
+				<div class="message">
+					<div class="message__inner innerWrap">
+						<div class="message__head">
+							<div class="commonHead01 commonHead01-color-white commonHead01-position-center">
+								<span class="commonHead01__eng">MESSAGE</span>
+								<h2 class="commonHead01__ja">メッセージ</h2>
+							</div>
+						</div>
+						<div class="message__body">
+							<p class="message__desc">
+								校舎数の展開拡大を目指している河合塾マナビス。校舎数の増加は校舎長ポストの増加と同義でキャリアアップのチャンスが広がります。また、近年高まっている「職住近接」のニーズへ対応できる可能性もアップします。高校生に良質な教育を届け、成長を促し、ともに成長し、みんなが幸せになれる河合塾マナビスをつくっていきましょう！
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- リクルート -->
+			<section class="sec__recruit">
+				<div class="recruit">
+					<div class="recruit__inner innerWrap">
+						<p class="recruit__txt">マナビスで一緒に働きませんか？</p>
+						<div class="recruit__commonBtn01 commonBtn01 commonBtn01-size-xl commonBtn01-icon-arrowRight commonBtn01-color-blue">
+							<a href="#" class="ro">
+								<span class="txt">求人情報を見る</span>
+							</a>
+						</div>
+						<div class="recruit__deco">
+							<div class="recruit__deco__man">
+								<img src="img/manavis/recruit_man.png" alt="人物イメージ" height="239">
+							</div>
+							<div class="recruit__deco__woman">
+								<img src="img/manavis/recruit_woman.png" alt="人物イメージ" height="237">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- フッター（共通） -->
+		<footer class="footer">
+			<nav class="footer__nav">
+				<ul class="footer__nav__list">
+					<li class="footer__nav__list__item footer__nav__list__item-home">
+						<a href="index.htm" class="ro">HOME</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="hamakids.htm" class="ro">はまキッズ</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="hamax.htm" class="ro">Hamax</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="manavis.htm" class="ro">マナビス</a>
+					</li>
+					<!-- [!] header__nav__list__item-active 付与でテキスト・ボーダースタイル追加 -->
+					<li class="footer__nav__list__item footer__nav__list__item-active">
+						<a href="oes.htm" class="ro">
+							沖縄受験<br class="oes">ゼミナール
+							<span class="small">（オー・イー・エス）</span>
+						</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="jfm.htm" class="ro">JFM</a>
+					</li>
+					<li class="footer__nav__list__item">
+						<a href="others.htm" class="ro">その他ブランド</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__body">
+				<div class="footer__body__inner innerWrap">
+					<div class="commonLogo01 commonLogo01-center footer__commonLogo01">
+						<a href="index.htm" class="ro">
+							<div class="commonLogo01__main">
+								<img src="img/common/logo.png" alt="浜学園" height="48">
+							</div>
+							<div class="commonLogo01__sub">
+								<span class="commonLogo01__sub__eng eng">RECRUIT</span>
+								<span class="commonLogo01__sub__ja">ブランド紹介サイト</span>
+							</div>
+						</a>
+					</div>
+					<div class="footer__corporate">
+						<a href="#">
+							<span class="txt">コーポレートサイト</span>
+							<span class="icon">
+								<img src="img/common/ico_external.png" alt="アイコン" height="14">
+							</span>
+						</a>
+					</div>
+					<div class="footer__cr">
+						&copy; HAMAGAKUEN.
+					</div>
+				</div>
+			</div>
+			<div class="footer__ga">
+				<a href="#" class="ro">Googleアナリティクスの利用について</a>
+			</div>
+		</footer>
+
+		<!-- ページトップ（共通） -->
+		<span class="pagetop">
+			<a href="#container">
+				<img src="img/common/pagetop.png" height="96" alt="PAGETOP">
+			</a>
+		</span>
+
+	</div>
+
+	<!-- JavaScript -->
+	<!-- 共通スクリプト -->
+	<script src="js/vendor/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

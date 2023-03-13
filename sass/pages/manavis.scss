@@ -1,0 +1,371 @@
+@charset "utf-8";
+@use '../foundation/mixins' as *;
+// @include mq(pc)
+// @include mq(tab)
+// @include mq(sp)
+
+/* ============================================
+// 河合塾マナビス
+// ==========================================*/
+
+/*--------------------
+	variables
+--------------------*/
+$primary-color: #0086ac;
+$secondary-color: #e04943;
+$third-color: #afdeed;
+
+/*--------------------
+	ページ内共通
+--------------------*/
+.commonHead01 {
+	&__eng {
+
+	}
+	&__ja {
+
+	}
+
+	&-color {
+		&-white {
+
+		}
+	}
+	&-position {
+		&-center {
+
+		}
+	}
+}
+
+/*--------------------
+	style
+--------------------*/
+.lower-manavis {
+
+	// メインビジュアル
+	.mainVisual {
+		position: relative;
+
+
+		// ベースボーダー
+		border-width: 28px;
+		border-style: solid;
+		border-color: $secondary-color $primary-color $secondary-color $primary-color;
+		// ボーダー被せ
+		&__border {
+			&__item {
+				display: inline-block;
+				border-width: 28px;
+				border-style: solid;
+				border-color: transparent;
+				position: absolute;
+				pointer-events: none;
+
+				&-01 {
+					width: 20%;
+					height: calc(100% + 56px);
+					top: -28px;
+					right: -28px;
+					border-color: $third-color transparent $third-color transparent;
+					border-left: none;
+				}
+				&-02 {
+					width: 100%;
+					height: calc(50% + 56px);
+					top: -28px;
+					left: -28px;
+					border-color: transparent transparent transparent $third-color;
+					border-bottom: none;
+				}
+				&-03 {
+					width: 100%;
+					height: calc(50% + 56px);
+					bottom: -28px;
+					right: -28px;
+					border-color: transparent $secondary-color transparent transparent;
+					border-top: none;
+				}
+				&-04 {
+					width: 20%;
+					height: calc(100% + 56px);
+					top: -28px;
+					left: 20%;
+					border-color: $third-color transparent $third-color transparent;
+					border-right: none;
+					border-left: none;
+				}
+				&-05 {
+					width: 20%;
+					height: calc(100% + 56px);
+					top: -28px;
+					left: 40%;
+					border-color: $primary-color transparent $primary-color transparent;
+					border-right: none;
+					border-left: none;
+				}
+			}
+		}
+
+		&__wrap {
+
+			overflow: hidden;
+		}
+		&__inner {
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding-top: 32px;
+			padding-bottom: 40px;
+		}
+		&__txtArea {
+			flex: 0 0 55%;
+			max-width: 652px;
+			align-self: center;
+			@include mq(tab) {
+				flex: 0 0 50%;
+			}
+		}
+		&__copy {
+
+		}
+		&__desc {
+			margin-top: 20px;
+			font-weight: 500;
+			width: 80%;
+			max-width: 460px;
+		}
+		&__imgArea {
+			flex: 0 0 67%;
+			max-width: 800px;
+			margin-left: -8%;
+			z-index: -1;
+			margin-bottom: -40px;
+			align-self: flex-end;
+			@include mq(tab) {
+				flex: auto;
+				width: 100%;
+				margin-left: -12%;
+				margin-right: -8%;
+			}
+		}
+	}
+	// 募集職種
+	.sec__jobs {
+		.jobs {
+			&__inner {
+
+			}
+			&__head {
+
+			}
+			&__body {
+
+			}
+
+			&__jobsName {
+
+			}
+			&__txtArea {
+
+			}
+			&__lead {
+
+			}
+			&__desc {
+
+			}
+			&__imgArea {
+
+			}
+			&__img {
+
+			}
+			&__illust {
+
+			}
+		}
+	}
+	// キャリアプラン
+	.sec__career {
+		.career {
+			&__inner {
+
+			}
+			&__head {
+
+			}
+			&__body {
+
+			}
+
+			&__lead {
+
+			}
+			.careerList {
+				&__item {
+
+				}
+
+				&__head {
+
+				}
+				&__numHolder {
+
+				}
+				&__num {
+
+				}
+				&__eng {
+
+				}
+				&__jobName {
+
+				}
+				&__body {
+
+				}
+				&__term {
+
+				}
+				&__desc {
+
+				}
+			}
+		}
+	}
+	// セパレートイメージ
+	.separateImg {
+
+	}
+	// ポイント
+	.sec__point {
+		.point {
+			&__inner {
+
+			}
+			&__head {
+
+			}
+			&__body {
+
+			}
+
+			.pointCircleList {
+				&__item {
+
+				}
+				&__pointTag {
+
+				}
+				&__txt {
+
+				}
+			}
+			.pointList {
+				&__item {
+
+				}
+				&__txtArea {
+
+				}
+				&__lead {
+
+				}
+				&__desc {
+
+				}
+				&__illustArea {
+
+				}
+				&__illust {
+
+				}
+			}
+			.pointTag {
+
+			}
+		}
+	}
+	// よくある質問
+	.sec__faq {
+		.faq {
+			&__inner {
+
+			}
+			&__head {
+
+			}
+			&__body {
+
+			}
+		}
+		.faqBox {
+
+		}
+		.faqList {
+			&__item {
+
+			}
+		}
+		.faqAccordion {
+			&__head {
+
+			}
+			&__initial {
+
+			}
+			&__question {
+
+			}
+			&__body {
+
+			}
+			&__answer {
+
+			}
+		}
+	}
+	// メッセージ
+	.sec__message {
+		.message {
+			&__inner {
+
+			}
+			&__head {
+
+			}
+			&__body {
+
+			}
+
+			&__desc {
+
+			}
+		}
+	}
+	// リクルート
+	.sec__recruit {
+		.recruit {
+			&__inner {
+
+			}
+
+			&__txt {
+
+			}
+			&__commonBtn01 {
+
+			}
+			&__deco {
+				&__man {
+
+				}
+				&__woman {
+
+				}
+			}
+		}
+	}
+
+}
