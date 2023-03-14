@@ -120,17 +120,14 @@ $secondary-color: #00a4e8;
 	.mainVisual {
 		background: radial-gradient(circle, rgba(2,93,203,1) 0%, rgba(2,65,159,1) 60%);
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
 		align-items: flex-start;
 		position: relative;
-		padding-top: 48px;
-		@include mq(tab) {
-			padding-top: 40px;
-		}
 		@include mq(sp) {
 			flex-direction: column-reverse;
 			height: auto;
-			// padding-top: 48px;
+			padding-top: 48px;
+			overflow: hidden;
 		}
 
 		//背景
@@ -150,19 +147,15 @@ $secondary-color: #00a4e8;
 		}
 
 		&__imgArea {
-			flex: 0 0 64%;
+			flex: 0 0 47%;
 			max-width: 1054px;
-			margin-right: 2.8%;
+			margin-right: 3%;
 			position: relative;
 			z-index: 10;
 			align-self: flex-end;
-			margin-left: -10%;
-			@include mq(tab) {
-				flex: 0 0 68%;
-			}
 			@include mq(sp) {
 				margin-right: 0;
-				margin-top: 16px;
+				margin-bottom: -32px;
 			}
 		}
 		&__img {
@@ -173,69 +166,40 @@ $secondary-color: #00a4e8;
 			@include mq(sp) {
 				margin-top: 0;
 			}
-
+			img {
+				@include mq(sp) {
+					max-width: 1054px;
+					width: 150%;
+					margin-left: -50%;
+				}
+			}
 		}
 		&__txtArea {
-			flex: 0 0 48%;
-			max-width: 449px + 40px;
+			flex: 0 0 50%;
 			align-self: center;
-			margin-top: -40px;
 			position: relative;
 			padding-right: 40px;
 			padding-top: 64px;
 			padding-bottom: 90px;
-			@include mq(tab) {
-				padding-top: 48px;
-				flex: 0 0 44%;
-			}
 			@include mq(sp) {
-				margin-top: 0;
 				padding: 0;
 				width: 85%;
 				margin: 0 auto;
 			}
 		}
 		&__copy {
-			img {
-				@include mq(tab) {
-					transform: scale(0.8);
-					transform-origin: left;
-				}
-				@include mq(sp) {
-					transform: scale(1);
-					// transform-origin: center;
-					// height: 90px;
-				}
-			}
+			max-width: 449px;
 		}
 		&__lead {
 			margin-top: 36px;
 			width: 70%;
 			max-width: 307px;
-			@include mq(tab) {
-				margin-top: 16px;
-			}
 			@include mq(sp) {
 				margin-top: 20px;
-			}
-
-			img {
-				@include mq(tab) {
-					transform: scale(0.8);
-					transform-origin: left;
-				}
-				@include mq(sp) {
-					transform: scale(1);
-					// transform-origin: center;
-					// height: 50px;
-				}
 			}
 		}
 		&__commonBtn01 {
 			margin-top: 36px;
-			@include mq(tab) {
-				margin-top: 24px;
-			}
 			@include mq(sp) {
 				margin-top: 32px;
 			}
