@@ -31,11 +31,19 @@
 
       &__item {
         flex: 1;
-        border-left: 1px solid #dedede;
+        @include mq(pc) {
+          border-left: 1px solid #dedede;
+        }
         @include mq(sp) {
           flex: auto;
-          min-width: 33%;
+          width: 50%;
 
+          &:nth-child(3),
+          &:nth-child(5),
+          &:nth-child(7) {
+            border-left: 1px solid #dedede;
+          }
+          &:nth-child(4),
           &:nth-child(5),
           &:nth-child(6),
           &:nth-child(7) {

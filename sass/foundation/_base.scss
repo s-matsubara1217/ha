@@ -42,6 +42,7 @@ body{
 	letter-spacing: 0.05em;
 	-webkit-text-size-adjust: none;
 	-webkit-overflow-scrolling: touch;
+	font-feature-settings: 'palt';
 	@include mq(sp) {
 		font-size: 1.4rem;
 		background-size: auto;
