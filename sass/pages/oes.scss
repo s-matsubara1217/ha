@@ -124,6 +124,9 @@ $secondary-color: #00a4e8;
 		align-items: flex-start;
 		position: relative;
 		padding-top: 48px;
+		@include mq(tab) {
+			padding-top: 40px;
+		}
 		@include mq(sp) {
 			flex-direction: column-reverse;
 			height: auto;
@@ -147,14 +150,14 @@ $secondary-color: #00a4e8;
 		}
 
 		&__imgArea {
-			flex: 0 0 66%;
+			flex: 0 0 56%;
 			max-width: 1054px;
 			margin-right: 2.8%;
 			position: relative;
 			z-index: 10;
 			align-self: flex-end;
 			@include mq(tab) {
-				flex: 0 0 60%;
+				flex: 0 0 56%;
 			}
 			@include mq(sp) {
 				margin-right: 0;
@@ -178,9 +181,10 @@ $secondary-color: #00a4e8;
 			margin-top: -40px;
 			position: relative;
 			padding-right: 40px;
-			padding-top: 56px;
-			padding-bottom: 80px;
+			padding-top: 64px;
+			padding-bottom: 90px;
 			@include mq(tab) {
+				padding-top: 48px;
 				flex: 0 0 36%;
 			}
 			@include mq(sp) {
