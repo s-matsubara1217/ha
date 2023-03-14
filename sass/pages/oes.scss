@@ -120,7 +120,7 @@ $secondary-color: #00a4e8;
 	.mainVisual {
 		background: radial-gradient(circle, rgba(2,93,203,1) 0%, rgba(2,65,159,1) 60%);
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: flex-start;
 		position: relative;
 		padding-top: 48px;
@@ -150,14 +150,15 @@ $secondary-color: #00a4e8;
 		}
 
 		&__imgArea {
-			flex: 0 0 56%;
+			flex: 0 0 64%;
 			max-width: 1054px;
 			margin-right: 2.8%;
 			position: relative;
 			z-index: 10;
 			align-self: flex-end;
+			margin-left: -10%;
 			@include mq(tab) {
-				flex: 0 0 56%;
+				flex: 0 0 68%;
 			}
 			@include mq(sp) {
 				margin-right: 0;
@@ -175,7 +176,7 @@ $secondary-color: #00a4e8;
 
 		}
 		&__txtArea {
-			flex: 0 0 30%;
+			flex: 0 0 48%;
 			max-width: 449px + 40px;
 			align-self: center;
 			margin-top: -40px;
@@ -185,7 +186,7 @@ $secondary-color: #00a4e8;
 			padding-bottom: 90px;
 			@include mq(tab) {
 				padding-top: 48px;
-				flex: 0 0 36%;
+				flex: 0 0 44%;
 			}
 			@include mq(sp) {
 				margin-top: 0;
